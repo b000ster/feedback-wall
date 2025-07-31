@@ -1,0 +1,17 @@
+# Ignore dependencies folder
+node_modules/
+
+# Ignore environment variables
+.env
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore VS Code workspace files
+.vscode/
+
+# Ignore feedback data file (optional)
+backend/feedback.json
