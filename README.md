@@ -33,36 +33,34 @@ npm (comes with Node.js) ✔️
 MongoDB: Not needed for this project ❌
 
 Steps
-Clone the repo:
+1.Clone the repo:
 
-bash
 git clone https://github.com/yourusername/feedback-wall.git
 cd feedback-wall/backend
-Install dependencies:
+2.Install dependencies:
 
-bash
 npm install
-Ensure feedback.json exists with empty array contents:
+3.Ensure feedback.json exists with empty array contents:
 
 json
 []
-Start the server:
+4.Start the server:
 
-bash
 node server.js
-Open your browser and visit:
+5.Open your browser and visit:
 
-text
 http://localhost:5000
-Use the frontend to submit and view feedback! 🎉
 
+6.Use the frontend to submit and view feedback! 🎉
 📂 Project Structure
-text
+
 feedback-wall/
   backend/
     server.js           # Express backend server
     feedback.json       # Local JSON file to store feedback
   public/               # Frontend static files (HTML, CSS, JS)
+
+
 🚀 Deployment
 Deployed on Render.com, serving both backend API and frontend.
 
