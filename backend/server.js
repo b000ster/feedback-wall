@@ -4,7 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 5000;
+// Use environment PORT or 5000 as fallback
+const PORT = process.env.PORT || 5000;
 
 // Enable CORS to allow frontend connections
 app.use(cors());
@@ -62,10 +63,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
-// Start server
-const PORT = process.env.PORT || 5000;
-
+// Start server, listen on all network interfaces and the correct port
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Feedback Wall backend running on http://localhost:${PORT}`);
 });
-
